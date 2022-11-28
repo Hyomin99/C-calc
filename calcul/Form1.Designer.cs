@@ -31,16 +31,16 @@ namespace calcul
         {
             this.clear = new System.Windows.Forms.Button();
             this.zero = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.divide = new System.Windows.Forms.Button();
             this.equl = new System.Windows.Forms.Button();
             this.one = new System.Windows.Forms.Button();
             this.two = new System.Windows.Forms.Button();
             this.three = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.multi = new System.Windows.Forms.Button();
             this.four = new System.Windows.Forms.Button();
             this.five = new System.Windows.Forms.Button();
             this.six = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.minus = new System.Windows.Forms.Button();
             this.seven = new System.Windows.Forms.Button();
             this.eghit = new System.Windows.Forms.Button();
             this.nine = new System.Windows.Forms.Button();
@@ -57,7 +57,7 @@ namespace calcul
             this.clear.TabIndex = 0;
             this.clear.Text = "C";
             this.clear.UseVisualStyleBackColor = true;
-            this.clear.Click += new System.EventHandler(this.button1_Click);
+            this.clear.Click += new System.EventHandler(this.clear_Click);
             // 
             // zero
             // 
@@ -67,16 +67,17 @@ namespace calcul
             this.zero.TabIndex = 1;
             this.zero.Text = "0";
             this.zero.UseVisualStyleBackColor = true;
-            this.zero.Click += new System.EventHandler(this.button2_Click);
+            this.zero.Click += new System.EventHandler(this.zero_Click);
             // 
-            // button3
+            // divide
             // 
-            this.button3.Location = new System.Drawing.Point(174, 372);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 66);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "/";
-            this.button3.UseVisualStyleBackColor = true;
+            this.divide.Location = new System.Drawing.Point(174, 372);
+            this.divide.Name = "divide";
+            this.divide.Size = new System.Drawing.Size(75, 66);
+            this.divide.TabIndex = 2;
+            this.divide.Text = "/";
+            this.divide.UseVisualStyleBackColor = true;
+            this.divide.Click += new System.EventHandler(this.divide_Click);
             // 
             // equl
             // 
@@ -86,6 +87,7 @@ namespace calcul
             this.equl.TabIndex = 3;
             this.equl.Text = "=";
             this.equl.UseVisualStyleBackColor = true;
+            this.equl.Click += new System.EventHandler(this.equl_Click);
             // 
             // one
             // 
@@ -95,6 +97,7 @@ namespace calcul
             this.one.TabIndex = 4;
             this.one.Text = "1";
             this.one.UseVisualStyleBackColor = true;
+            this.one.Click += new System.EventHandler(this.one_Click);
             // 
             // two
             // 
@@ -104,6 +107,7 @@ namespace calcul
             this.two.TabIndex = 5;
             this.two.Text = "2";
             this.two.UseVisualStyleBackColor = true;
+            this.two.Click += new System.EventHandler(this.two_Click);
             // 
             // three
             // 
@@ -115,14 +119,15 @@ namespace calcul
             this.three.UseVisualStyleBackColor = true;
             this.three.Click += new System.EventHandler(this.three_Click);
             // 
-            // button8
+            // multi
             // 
-            this.button8.Location = new System.Drawing.Point(255, 300);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 66);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "*";
-            this.button8.UseVisualStyleBackColor = true;
+            this.multi.Location = new System.Drawing.Point(255, 300);
+            this.multi.Name = "multi";
+            this.multi.Size = new System.Drawing.Size(75, 66);
+            this.multi.TabIndex = 7;
+            this.multi.Text = "*";
+            this.multi.UseVisualStyleBackColor = true;
+            this.multi.Click += new System.EventHandler(this.multi_Click);
             // 
             // four
             // 
@@ -132,6 +137,7 @@ namespace calcul
             this.four.TabIndex = 8;
             this.four.Text = "4";
             this.four.UseVisualStyleBackColor = true;
+            this.four.Click += new System.EventHandler(this.four_Click);
             // 
             // five
             // 
@@ -141,6 +147,7 @@ namespace calcul
             this.five.TabIndex = 9;
             this.five.Text = "5";
             this.five.UseVisualStyleBackColor = true;
+            this.five.Click += new System.EventHandler(this.five_Click);
             // 
             // six
             // 
@@ -150,15 +157,17 @@ namespace calcul
             this.six.TabIndex = 10;
             this.six.Text = "6";
             this.six.UseVisualStyleBackColor = true;
+            this.six.Click += new System.EventHandler(this.six_Click);
             // 
-            // button12
+            // minus
             // 
-            this.button12.Location = new System.Drawing.Point(255, 228);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(75, 66);
-            this.button12.TabIndex = 11;
-            this.button12.Text = "-";
-            this.button12.UseVisualStyleBackColor = true;
+            this.minus.Location = new System.Drawing.Point(255, 228);
+            this.minus.Name = "minus";
+            this.minus.Size = new System.Drawing.Size(75, 66);
+            this.minus.TabIndex = 11;
+            this.minus.Text = "-";
+            this.minus.UseVisualStyleBackColor = true;
+            this.minus.Click += new System.EventHandler(this.minus_Click);
             // 
             // seven
             // 
@@ -168,6 +177,7 @@ namespace calcul
             this.seven.TabIndex = 12;
             this.seven.Text = "7";
             this.seven.UseVisualStyleBackColor = true;
+            this.seven.Click += new System.EventHandler(this.seven_Click);
             // 
             // eghit
             // 
@@ -177,6 +187,7 @@ namespace calcul
             this.eghit.TabIndex = 13;
             this.eghit.Text = "8";
             this.eghit.UseVisualStyleBackColor = true;
+            this.eghit.Click += new System.EventHandler(this.eghit_Click);
             // 
             // nine
             // 
@@ -196,25 +207,23 @@ namespace calcul
             this.plus.TabIndex = 15;
             this.plus.Text = "+";
             this.plus.UseVisualStyleBackColor = true;
+            this.plus.Click += new System.EventHandler(this.plus_Click);
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("맑은 고딕", 38F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(183, 71);
+            this.label1.Location = new System.Drawing.Point(12, 71);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 82);
+            this.label1.Size = new System.Drawing.Size(323, 82);
             this.label1.TabIndex = 16;
-            this.label1.Text = "label1";
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(93, 9);
+            this.label2.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(12, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(237, 45);
+            this.label2.Size = new System.Drawing.Size(318, 45);
             this.label2.TabIndex = 17;
-            this.label2.Text = "label2";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Form1
             // 
@@ -227,16 +236,16 @@ namespace calcul
             this.Controls.Add(this.nine);
             this.Controls.Add(this.eghit);
             this.Controls.Add(this.seven);
-            this.Controls.Add(this.button12);
+            this.Controls.Add(this.minus);
             this.Controls.Add(this.six);
             this.Controls.Add(this.five);
             this.Controls.Add(this.four);
-            this.Controls.Add(this.button8);
+            this.Controls.Add(this.multi);
             this.Controls.Add(this.three);
             this.Controls.Add(this.two);
             this.Controls.Add(this.one);
             this.Controls.Add(this.equl);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.divide);
             this.Controls.Add(this.zero);
             this.Controls.Add(this.clear);
             this.Name = "Form1";
@@ -249,16 +258,16 @@ namespace calcul
 
         private System.Windows.Forms.Button clear;
         private System.Windows.Forms.Button zero;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button divide;
         private System.Windows.Forms.Button equl;
         private System.Windows.Forms.Button one;
         private System.Windows.Forms.Button two;
         private System.Windows.Forms.Button three;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button multi;
         private System.Windows.Forms.Button four;
         private System.Windows.Forms.Button five;
         private System.Windows.Forms.Button six;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button minus;
         private System.Windows.Forms.Button seven;
         private System.Windows.Forms.Button eghit;
         private System.Windows.Forms.Button nine;
