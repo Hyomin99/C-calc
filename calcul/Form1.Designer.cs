@@ -45,7 +45,7 @@ namespace calcul
             this.eghit = new System.Windows.Forms.Button();
             this.nine = new System.Windows.Forms.Button();
             this.plus = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.result = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -209,13 +209,13 @@ namespace calcul
             this.plus.UseVisualStyleBackColor = true;
             this.plus.Click += new System.EventHandler(this.plus_Click);
             // 
-            // label1
+            // result
             // 
-            this.label1.Font = new System.Drawing.Font("맑은 고딕", 38F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(12, 71);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(323, 82);
-            this.label1.TabIndex = 16;
+            this.result.Font = new System.Drawing.Font("맑은 고딕", 38F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.result.Location = new System.Drawing.Point(12, 71);
+            this.result.Name = "result";
+            this.result.Size = new System.Drawing.Size(323, 82);
+            this.result.TabIndex = 16;
             // 
             // label2
             // 
@@ -231,7 +231,7 @@ namespace calcul
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(347, 450);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.result);
             this.Controls.Add(this.plus);
             this.Controls.Add(this.nine);
             this.Controls.Add(this.eghit);
@@ -272,7 +272,7 @@ namespace calcul
         private System.Windows.Forms.Button eghit;
         private System.Windows.Forms.Button nine;
         private System.Windows.Forms.Button plus;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label result;
         private System.Windows.Forms.Label label2;
     }
 }
